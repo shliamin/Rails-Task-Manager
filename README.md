@@ -1,24 +1,57 @@
-# README
+# Rails Task Manager
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
+Rails Task Manager is a web application for managing tasks. It offers a straightforward platform for users to maintain their task lists with operations like adding, editing, and deleting tasks.
 
-Things you may want to cover:
+## Features
+- **User Authentication** to ensure that tasks are personal and secure.
+- **CRUD Functionality** for managing tasks.
+- **Prioritization and Tags** to organize tasks based on urgency and category.
+- **Responsive Design** to accommodate various device screens.
 
-* Ruby version
+## Technology Stack
+- Ruby on Rails
+- SQLite3
+- Puma
+- Bootstrap
 
-* System dependencies
+## Getting Started
 
-* Configuration
+### Prerequisites
+- Ruby (Version as specified in `.ruby-version`)
+- Rails
 
-* Database creation
+### Installation
+Clone the repo and navigate into the directory:
+git clone https://github.com/shliamin/Rails-Task-Manager.git
+cd rails-task-manager
 
-* Database initialization
+Install dependencies:
+bundle install
 
-* How to run the test suite
+Setup database:
+rails db:create db:migrate
 
-* Services (job queues, cache servers, search engines, etc.)
+### Usage
+Run the server:
+rails server
 
-* Deployment instructions
+Access the application at `http://localhost:3000`.
 
-* ...
+### Running Tests
+Execute tests with:
+rails test
+
+## Contributing
+Please feel free to contribute to the development of this project. Follow the typical fork-branch-pull request workflow.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+
+
+
+
+
+
+
