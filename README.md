@@ -23,30 +23,40 @@ Rails Task Manager is a web application for managing tasks. It offers a straight
 
 ### Installation
 Clone the repo and navigate into the directory:
+```bash
 git clone https://github.com/shliamin/Rails-Task-Manager.git
-cd rails-task-manager
+cd Rails-Task-Manager
+```
 
 Install dependencies:
+```bash
 bundle install
+```
 
 Setup database:
+```bash
 rails db:create db:migrate
+```
 
 ### Usage
 Run the server:
+```bash
 rails server
+```
 
 Access the application at `http://localhost:3000`.
 
 ### Running Tests
 Execute tests with:
+```bash
 rails test
+```
 
 ## Contributing
 Please feel free to contribute to the development of this project. Follow the typical fork-branch-pull request workflow.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License.
 
 
 
