@@ -1,0 +1,14 @@
+<div class="box">
+  <h1>Tasks Manager</h1>
+  <h2>Efim Shliamin</h2>
+  <%= link_to 'New Task', new_task_path, class: 'button' %>
+  <ul>
+    <% @tasks.each do |task| %>
+      <li>
+        <%= link_to task.title, task_path(task) %>
+        <%= link_to 'Edit', edit_task_path(task), class: 'button' %>
+        <%= link_to 'Destroy', task_path(task), method: :delete, data: { confirm: 'Are you sure?' }, class: 'button' %>
+      </li>
+    <% end %>
+  </ul>
+</div>

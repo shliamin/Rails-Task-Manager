@@ -1,67 +1,75 @@
+
 # Rails Task Manager
 
-## Overview
-Rails Task Manager is a web application for managing tasks. It offers a straightforward platform for users to maintain their task lists with operations like adding, editing, and deleting tasks.
+### Efim Shliamin
+
+Rails Task Manager is a Ruby on Rails application designed to manage tasks efficiently. This application provides a simple interface to create, view, edit, and delete tasks.
 
 ## Features
-- **User Authentication** to ensure that tasks are personal and secure.
-- **CRUD Functionality** for managing tasks.
-- **Prioritization and Tags** to organize tasks based on urgency and category.
-- **Responsive Design** to accommodate various device screens.
 
-## Technology Stack
-- Ruby on Rails
+- Create new tasks
+- View task details
+- Edit existing tasks
+- Delete tasks
+- Responsive design with a modern user interface
+
+## Prerequisites
+
+- Ruby 3.1.0
+- Rails 6.1.0
 - SQLite3
-- Puma
-- Bootstrap
 
-## Getting Started
+## Installation
 
-### Prerequisites
-- Ruby (Version as specified in `.ruby-version`)
-- Rails
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/shliamin/rails-task-manager.git
+   cd rails-task-manager
+   ```
 
-### Installation
-Clone the repo and navigate into the directory:
-```bash
-git clone https://github.com/shliamin/Rails-Task-Manager.git
-cd Rails-Task-Manager
-```
+2. Install dependencies:
+   ```bash
+   bundle install
+   ```
 
-Install dependencies:
-```bash
-bundle install
-```
+3. Setup the database:
+   ```bash
+   rails db:setup
+   ```
 
-Setup database:
-```bash
-rails db:create db:migrate
-```
+4. Start the server:
+   ```bash
+   rails server
+   ```
 
-### Usage
-Run the server:
-```bash
-rails server
-```
+5. Open your browser and navigate to:
+   [http://localhost:3000/tasks](http://localhost:3000/tasks)
 
-Access the application at `http://localhost:3000`.
+## Usage
 
-### Running Tests
-Execute tests with:
-```bash
-rails test
-```
+### Creating a Task
+1. Click on "New Task".
+2. Fill out the form and click "Create Task".
 
-## Contributing
-Please feel free to contribute to the development of this project. Follow the typical fork-branch-pull request workflow.
+### Viewing a Task
+1. Click on a task title in the task list to view its details.
 
-## License
-This project is licensed under the MIT License.
+### Editing a Task
+1. Click on "Edit" next to a task.
+2. Update the form and click "Update Task".
 
+### Deleting a Task
+1. Click on "Destroy" next to a task and confirm deletion.
 
+## Routes
 
-
-
-
+- `GET /tasks`: List all tasks.
+- `GET /tasks/:id`: View a task.
+- `GET /tasks/new`: Form to create a new task.
+- `POST /tasks`: Create a new task.
+- `GET /tasks/:id/edit`: Form to edit a task.
+- `PATCH /tasks/:id`: Update a task.
+- `PUT /tasks/:id`: Update a task.
+- `DELETE /tasks/:id`: Delete a task.
 
 
