@@ -42,8 +42,6 @@ Rails Task Manager is a Ruby on Rails application designed to manage tasks effic
    rails server
    ```
 
-5. Open your browser and navigate to:
-   [http://localhost:3000/tasks](http://localhost:3000/tasks)
 
 ## Usage
 
