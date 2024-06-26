@@ -5,20 +5,12 @@ default: &default
 
 development:
   <<: *default
-  database: mydatabase
-  username: myuser
-  password: mypassword
-  host: localhost
-  port: 5432
+  database: db/development.sqlite3
 
 test:
   <<: *default
-  database: test_mydatabase
-  username: myuser
-  password: mypassword
-  host: localhost
-  port: 5432
+  database: db/test.sqlite3
 
 production:
   <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
+  url: <%= ENV['DATABASE_PRIVATE_URL'] %>
