@@ -20,7 +20,7 @@ end
 
 config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'your-frontend-url.com'
+    origins 'https://rails-task-manager-a6718843d50b.herokuapp.com/'
     resource '*', headers: :any, methods: [:get, :post, :put, :delete, :options]
   end
 end
