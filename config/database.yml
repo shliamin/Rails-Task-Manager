@@ -6,27 +6,10 @@ default: &default
 
 development:
   <<: *default
-  host: <%= ENV['PGHOST'] %>
-  port: <%= ENV.fetch("DATABASE_PORT", 5432) %>
-  database: <%= ENV['PGDATABASE'] %>
-  username: <%= ENV['PGUSER'] %>
-  password: <%= ENV['PGPASSWORD'] %>
-  sslmode: <%= ENV['SSL_MODE'] %>
 
 test:
   <<: *default
-  host: <%= ENV['PGHOST'] %>
-  port: <%= ENV.fetch("DATABASE_PORT", 5432) %>
-  database: <%= ENV['PGDATABASE'] %>
-  username: <%= ENV['PGUSER'] %>
-  password: <%= ENV['PGPASSWORD'] %>
-  sslmode: <%= ENV['SSL_MODE'] %>
 
 production:
   <<: *default
-  host: <%= ENV['PGHOST'] %>
-  port: <%= ENV.fetch("DATABASE_PORT", 5432) %>
-  database: <%= ENV['PGDATABASE'] %>
-  username: <%= ENV['PGUSER'] %>
-  password: <%= ENV['PGPASSWORD'] %>
-  sslmode: <%= ENV['SSL_MODE'] %>
+  url: <%= ENV['DATABASE_URL'] %>
