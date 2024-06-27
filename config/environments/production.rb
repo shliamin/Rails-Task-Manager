@@ -6,6 +6,8 @@ Rails.application.configure do
 
   # Ensure secret_key_base is set from environment variable
   config.secret_key_base = ENV['SECRET_KEY_BASE']
+  config.hosts << "rails-task-manager-a6718843d50b.herokuapp.com"
+
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
