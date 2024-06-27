@@ -1,5 +1,3 @@
-# Gemfile
-
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -16,9 +14,6 @@ gem 'jbuilder', '~> 2.7'
 gem 'bcrypt', '~> 3.1.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 
-# This gem will update rubygems version on Heroku
-gem 'rubygems-update', '>= 3.3.22'
-
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '>= 3.26'
@@ -32,10 +27,6 @@ group :development do
   gem 'listen', '>= 3.2.0'
   # gem 'spring'
   # gem 'spring-watcher-listen', '>= 2.0.1'
-end
-
-group :production do
-  gem 'pg', '>= 1.1'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
