@@ -4,3 +4,14 @@
 require_relative 'config/application'
 
 Rails.application.load_tasks
+
+namespace :rubygems do
+    desc "Update RubyGems"
+    task :update do
+      puts `gem update --system 3.3.22`
+    end
+end
+  
+task :environment do
+    Rake::Task['rubygems:update'].invoke
+end
