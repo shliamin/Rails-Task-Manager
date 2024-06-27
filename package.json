@@ -1,7 +1,20 @@
 {
   "name": "rails-task-manager",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "@rails/webpacker": "^6.0.0",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0",
+    "webpack-dev-server": "^3.11.0",
+    "babel-loader": "^8.1.0"
+  },
+  "devDependencies": {
+    "css-loader": "^5.2.6",
+    "mini-css-extract-plugin": "^1.6.0",
+    "sass": "^1.32.13",
+    "sass-loader": "^11.0.1",
+    "file-loader": "^6.2.0"
+  },
   "engines": {
     "node": "20.x"
   }
