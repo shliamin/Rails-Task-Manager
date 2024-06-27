@@ -2,11 +2,15 @@
   "name": "rails-task-manager",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "^6.0.0",
-    "webpack": "^5.0.0",
-    "webpack-cli": "^4.0.0",
+    "@rails/webpacker": "^5.4.3",
+    "webpack": "^4.0.0",
+    "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
-    "babel-loader": "^8.1.0"
+    "babel-loader": "^8.2.2",
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.6",
+    "@babel/plugin-proposal-private-methods": "^7.14.5",
+    "@babel/plugin-proposal-private-property-in-object": "^7.14.5"
   },
   "devDependencies": {
     "css-loader": "^5.2.6",
